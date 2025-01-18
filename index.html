@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthQuest</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>HealthQuest</h1>
+        <p>Путовање кроз тело и ум – испуњавај изазове и напредуј!</p>
+    </header>
+
+    <main>
+        <!-- Изазови -->
+        <section id="challenges">
+            <h2>Твоји дневни изазови</h2>
+            <div id="physical-challenge">
+                <center>
+                    <h3>Физички изазов:</h3>
+                    <p id="physical-text">...</p>
+                    <button onclick="completeChallenge('physical')">Завршено је!</button>
+                </center>
+            </div>
+
+            <div id="mental-challenge">
+                <center>
+                    <h3>Ментални изазов:</h3>
+                    <p id="mental-text">...</p>
+                    <button onclick="completeChallenge('mental')">Завршено је!</button>
+                </center>
+            </div>
+        </section>
+
+        <!-- Напредак -->
+	<audio id="level-up-sound" src="1.mp3" preload="auto"></audio>
+        <section id="progress">
+            <h2>Твој напредак</h2>
+            <progress id="progress-bar" value="0" max="100"></progress>
+            <p>Тренутни ниво: <span id="level">1</span></p>
+        </section>
+
+		<!-- Dodajemo dugme za dnevnik između napretka i resursa -->
+<div style="text-align:center; margin: 20px 0;">
+    <button onclick="window.location.href='diary.html'">Дигитални дневник</button>
+</div>
+
+        <!-- Ресурси -->
+        <section id="resources">
+            <h2>Корисни извори</h2>
+            <div class="resources-container">
+                <div class="resource-column">
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=7-blBQouyi4" target="_blank">Кратка медитација за почетнике</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=u5kontm7ix8" target="_blank">10-минутни тренинг код куће</a></li>
+                        <li><a href="https://fitpass.rs/blog/meditacija-osnove-prednosti/" target="_blank">Предности медитације</a></li>
+                        <li><a href="https://blog.nadjidom.com/2025/01/ciscenje-kao-psihoterapija-kako-sredjivanjem-kuce-sredjujemo-haos-u-glavi/" target="_blank">Хаос у кући, хаос у глави</a></li>
+			<li><a href="https://www.thementalhealthcoalition.org/mood-tunes/" target="_blank">Музика за различита расположења</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="resource-column">
+                    <ul>
+                        <li><a href="https://www.sleepfoundation.org/" target="_blank">Савети за бољи сан</a></li>
+                        <li><a href="https://sinhro.rs/zasto-je-citanje-korisno-15-razloga-zasto-je-dobro-citati-knjige/" target="_blank">Значај читања</a></li>
+                        <li><a href="https://www.nutrition.org/" target="_blank">Правилна исхрана</a></li>
+                        <li><a href="https://www.stress.org/" target="_blank">Како управљати стресом</a></li>
+			<li><a href="https://www.healthline.com/health-news/how-one-conversation-with-friends-per-day-can-help-your-mental-health#5" target="_blank">Значај комуникације</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Log Out button -->
+<center>
+        <section id="logout">
+            <button onclick="logoutUser()">LOG OUT</button>
+        </section>
+</center>
+    </main>
+
+    <footer>
+        <p>© 2025 HealthQuest</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</html>

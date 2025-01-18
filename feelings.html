@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kako se osećaš danas?</title>
+    <link rel="stylesheet" href="feelings.css">
+</head>
+<body>
+    <header>
+        <h1>Како се осећаш данас?</h1>
+    </header>
+    <main>
+        <div class="feelings">
+            <div class="feeling" onclick="navigateTo('sreca.html')">
+                <img src="sreca.jpg" alt="Срећно">
+                <p>Срећно</p>
+            </div>
+            <div class="feeling" onclick="navigateTo('tuga.html')">
+                <img src="tuga.jpg" alt="Тужно">
+                <p>Тужно</p>
+            </div>
+            <div class="feeling" onclick="navigateTo('bes.html')">
+                <img src="bes.jpg" alt="Бесно">
+                <p>Бесно</p>
+            </div>
+            <div class="feeling" onclick="navigateTo('stres.html')">
+                <img src="stres1.jpg" alt="Стресно">
+                <p>Стресно</p>
+            </div>
+            <div class="feeling" onclick="navigateTo('ne_znam.html')">
+                <img src="ravan1.jpg" alt="Не знам">
+                <p>Не знам</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 HealthQuest</p>
+    </footer>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

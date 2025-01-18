@@ -1,0 +1,95 @@
+/* login.css */
+body {
+    background: url('dnevnik.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    width: 97%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#saved-message {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Stilizacija dugmeta 'Назад' sa pozicioniranjem */
+#back-button-container {
+    position: absolute;
+    bottom: 80px;  /* Ovisno o visini footer-a, možda ćeš morati da prilagodiš ovu vrednost */
+    right: 20px;   /* Pozicionira dugme sa desne strane */
+    width: 100%;
+    text-align: right;
+}
+
+#back-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#back-button:hover {
+    background-color: #45a049;
+}
+
+

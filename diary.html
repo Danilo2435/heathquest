@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дигитални дневник</title>
+    <link rel="stylesheet" href="diary.css">
+</head>
+<body>
+    <header>
+        <h1>Дигитални дневник</h1>
+        <p>Запиши своје мисли и осећања!</p>
+    </header>
+
+    <main>
+        <section id="diary-section">
+            <h2>Твој дневник</h2>
+            <textarea id="diary-entry" placeholder="Запиши своје мисли овде..." rows="30" cols="50"></textarea>
+            <button onclick="saveDiaryEntry()">Сачувај дневник</button>
+            <div id="saved-message"></div>
+        </section>
+    </main>
+
+    <!-- Dodajte ovo unutar <body> tag-a, iznad footer-a -->
+<div id="back-button-container">
+    <a href="index.html" id="back-button">Назад</a>
+</div>
+
+    <center>
+    <footer>
+        <p>© 2025 HealthQuest</p>
+    </footer>
+    </center>
+
+    <script src="diary.js"></script>
+</body>
+</html>

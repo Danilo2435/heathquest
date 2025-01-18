@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+}
+
+.feelings {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.feeling {
+    text-align: center;
+    cursor: pointer;
+}
+
+.feeling img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.feeling p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+}
