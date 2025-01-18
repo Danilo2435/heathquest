@@ -1,5 +1,11 @@
 // Inicijalizacija korisničkih podataka
 let loggedInUser = sessionStorage.getItem("loggedInUser");
+
+if (!loggedInUser) {
+    window.location.href = 'login.html';
+}
+
+
 let userData = JSON.parse(localStorage.getItem(loggedInUser)) || { level: 1, progress: 0 };
 
 // Inicijalizacija izazova
