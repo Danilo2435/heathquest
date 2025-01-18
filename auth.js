@@ -18,6 +18,9 @@ function registerUser() {
     };
     localStorage.setItem(username, JSON.stringify(userData));
 
+    // Uloguj korisnika
+    sessionStorage.setItem('loggedInUser', username);
+
     alert("Успешно сте се регистровали!");
     window.location.href = "index.html"; // Preusmeravanje na glavnu stranicu
 }
