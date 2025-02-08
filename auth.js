@@ -42,7 +42,7 @@ function loginUser() {
     // Spremiti korisnika u sessionStorage
     sessionStorage.setItem("loggedInUser", username);
 
-    alert("Добродошли назад!");
+    alert("Добро дошли назад!");
     window.location.href = "feelings.html"; // Preusmeravanje na glavnu stranicu
 }
 
@@ -50,7 +50,7 @@ function loginUser() {
 function checkLoggedInUser() {
     const loggedInUser = sessionStorage.getItem("loggedInUser");
     if (loggedInUser) {
-        document.getElementById("auth-section").innerHTML = `<h2>Добродошли, ${loggedInUser}!</h2><p>Спремни сте за почетак. <a href="index.html">Прелазак на главну страницу</a></p>`;
+        document.getElementById("auth-section").innerHTML = `<h2>Добро дошли, ${loggedInUser}!</h2><p>Спремни сте за почетак. <a href="index.html">Прелазак на главну страницу</a></p>`;
     }
 }
 

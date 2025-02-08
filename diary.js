@@ -1,6 +1,12 @@
 // Prvo ćemo dobiti korisničko ime iz sessionStorage
 let loggedInUser = sessionStorage.getItem("loggedInUser");
 
+
+if (!loggedInUser) {
+    window.location.href = 'login.html';
+}
+
+
 // Funkcija za učitavanje prethodnog unosa iz dnevnika
 function loadDiaryEntry() {
     const diaryEntry = localStorage.getItem(loggedInUser + '-diary');
