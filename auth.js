@@ -22,7 +22,7 @@ function registerUser() {
     sessionStorage.setItem('loggedInUser', username);
 
     alert("Успешно сте се регистровали!");
-    window.location.href = "index.html"; // Preusmeravanje na glavnu stranicu
+    window.location.href = "feelings.html"; // Preusmeravanje na glavnu stranicu
 }
 
 // Prijava korisnika
