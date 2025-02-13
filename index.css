@@ -1,13 +1,9 @@
-/* index.css */
 body {
     background: url('5.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
 }
 
-/* Ostali stilovi specifični za index stranicu */
-
-/* Osnovni stilovi */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -17,7 +13,6 @@ body {
     color: #333;
 }
 
-/* Zaglavlje */
 header {
     text-align: center;
     padding: 20px 0;
@@ -37,7 +32,6 @@ header p {
     font-style: italic;
 }
 
-/* Glavni sadržaj */
 main {
     width: 90%;
     max-width: 1200px;
@@ -175,7 +169,6 @@ progress::-moz-progress-bar {
 }
 
 
-/* Footer */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -184,7 +177,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Media Queries */
 @media (max-width: 600px) {
     .resource-column {
         width: 100%;

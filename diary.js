@@ -1,4 +1,3 @@
-// Prvo ćemo dobiti korisničko ime iz sessionStorage
 let loggedInUser = sessionStorage.getItem("loggedInUser");
 
 
@@ -24,12 +23,9 @@ function saveDiaryEntry() {
         return;
     }
 
-    // Spremamo unos u localStorage pod imenom korisnika
     localStorage.setItem(loggedInUser + '-diary', diaryEntry);
 
-    // Prikazujemo poruku korisniku
     document.getElementById("saved-message").textContent = "Твој запис је успешно сачуван!";
 }
 
-// Pozivamo funkciju da učitamo prethodni unos prilikom učitavanja stranice
 window.onload = loadDiaryEntry;

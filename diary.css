@@ -1,4 +1,3 @@
-/* login.css */
 body {
     background: url('dnevnik.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -68,11 +67,10 @@ button:hover {
     font-weight: bold;
 }
 
-/* Stilizacija dugmeta 'Назад' sa pozicioniranjem */
 #back-button-container {
     position: absolute;
-    bottom: 120px;  /* Ovisno o visini footer-a, možda ćeš morati da prilagodiš ovu vrednost */
-    right: 20px;   /* Pozicionira dugme sa desne strane */
+    bottom: 120px; 
+    right: 20px;  
     width: 100%;
     text-align: right;
 }

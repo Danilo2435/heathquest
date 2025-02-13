@@ -8,7 +8,7 @@ if (!loggedInUser) {
 
 let userData = JSON.parse(localStorage.getItem(loggedInUser)) || { level: 1, progress: 0 };
 
-// Inicijalizacija izazova
+// Izazovi
 const physicalChallenges = [
     "Уради 10 склекова.",
     "Прошетај 30 минута.",
@@ -60,7 +60,6 @@ function completeChallenge(type) {
     const progressBar = document.getElementById("progress-bar");
     const levelDisplay = document.getElementById("level");
 
-    // Ažuriranje napretka
     progress += type === "physical" ? 30 : 20;
 
     if (progress >= 100) {
@@ -72,7 +71,6 @@ function completeChallenge(type) {
     progressBar.value = progress;
     levelDisplay.textContent = level;
 
-    // Uklanjanje ispunjenog izazova i generisanje novog
     if (type === "physical") {
         removeAndGeneratePhysicalChallenge();
     } else if (type === "mental") {
@@ -83,7 +81,6 @@ function completeChallenge(type) {
     alert("Сјајан посао!");
 }
 
-// Funkcija za uklanjanje ispunjenog fizičkog izazova i generisanje novog
 function removeAndGeneratePhysicalChallenge() {
     const challengeText = document.getElementById("physical-text").textContent;
     const index = physicalChallenges.indexOf(challengeText);
@@ -91,7 +88,6 @@ function removeAndGeneratePhysicalChallenge() {
         physicalChallenges.splice(index, 1);
     }
 
-    // Generiši novi fizički izazov
     if (physicalChallenges.length > 0) {
         const randomIndex = Math.floor(Math.random() * physicalChallenges.length);
         document.getElementById("physical-text").textContent = physicalChallenges[randomIndex];
@@ -100,7 +96,6 @@ function removeAndGeneratePhysicalChallenge() {
     }
 }
 
-// Funkcija za uklanjanje ispunjenog mentalnog izazova i generisanje novog
 function removeAndGenerateMentalChallenge() {
     const challengeText = document.getElementById("mental-text").textContent;
     const index = mentalChallenges.indexOf(challengeText);
@@ -108,7 +103,6 @@ function removeAndGenerateMentalChallenge() {
         mentalChallenges.splice(index, 1);
     }
 
-    // Generiši novi mentalni izazov
     if (mentalChallenges.length > 0) {
         const randomIndex = Math.floor(Math.random() * mentalChallenges.length);
         document.getElementById("mental-text").textContent = mentalChallenges[randomIndex];
@@ -117,7 +111,6 @@ function removeAndGenerateMentalChallenge() {
     }
 }
 
-// Funkcija za čuvanje napretka u localStorage
 function saveProgress() {
     userData.level = level;
     userData.progress = progress;
@@ -136,10 +129,9 @@ function loadProgress() {
     document.getElementById("level").textContent = level;
 }
 
-// Funkcija za odjavu korisnika
 function logoutUser() {
     sessionStorage.removeItem("loggedInUser");
-    window.location.href = "login.html"; // Preusmeravanje na login stranicu
+    window.location.href = "login.html"; 
 }
 
 window.onload = function () {
@@ -153,24 +145,20 @@ function completeChallenge(type) {
     const progressBar = document.getElementById("progress-bar");
     const levelDisplay = document.getElementById("level");
 
-    // Ažuriranje napretka
     progress += type === "physical" ? 30 : 20;
 
     if (progress >= 100) {
         progress = 0;
         level++;
         
-        // Reprodukuj zvuk kada korisnik pređe na novi nivo
         const levelUpSound = document.getElementById("level-up-sound");
-        levelUpSound.play(); // Pokreće zvuk
+        levelUpSound.play(); 
 
-        // Ovdje nema poruke, samo zvuk!
     }
 
     progressBar.value = progress;
     levelDisplay.textContent = level;
 
-    // Uklanjanje ispunjenog izazova i generisanje novog
     if (type === "physical") {
         removeAndGeneratePhysicalChallenge();
     } else if (type === "mental") {
